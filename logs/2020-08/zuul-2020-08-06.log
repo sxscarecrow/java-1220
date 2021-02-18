@@ -1,0 +1,357 @@
+2020-08-06 17:26:08.860 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:26:09.741 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:26:09.858 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:26:10.281 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:26:10.298 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:26:10.299 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:26:10.299 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:26:10.435 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:26:10.435 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1550 ms
+2020-08-06 17:26:10.545 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:26:10.546 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:26:10.557 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@10f7918f
+2020-08-06 17:26:11.240 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:26:11.240 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:26:11.360 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:26:11.850 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:26:11.861 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:26:12.050 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:26:12.125 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:26:12.250 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:26:12.389 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#493b01ef:0/SimpleConnection@75882261 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53658]
+2020-08-06 17:26:12.513 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.909 seconds (JVM running for 6.229)
+2020-08-06 17:26:12.923 [RMI TCP Connection(4)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:26:12.923 [RMI TCP Connection(4)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:26:12.930 [RMI TCP Connection(4)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:27:07.084 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:27:07.739 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:27:07.849 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:27:08.217 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:27:08.233 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:27:08.233 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:27:08.233 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:27:08.374 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:27:08.374 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1266 ms
+2020-08-06 17:27:08.459 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:27:08.460 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:27:08.470 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7f5538a1
+2020-08-06 17:27:08.995 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 17:27:09.149 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:27:09.149 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:27:09.270 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:27:09.784 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:27:09.796 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:27:09.928 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:27:09.957 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:27:10.057 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:27:10.090 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#76fe6cdc:0/SimpleConnection@6544899b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53730]
+2020-08-06 17:27:10.192 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.066 seconds (JVM running for 5.204)
+2020-08-06 17:27:10.925 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:27:10.925 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:27:10.932 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:27:50.423 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:27:51.037 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:27:51.151 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:27:51.532 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:27:51.546 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:27:51.547 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:27:51.547 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:27:51.679 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:27:51.679 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1235 ms
+2020-08-06 17:27:51.758 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:27:51.759 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:27:51.768 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@34780cd9
+2020-08-06 17:27:52.281 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 17:27:52.417 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:27:52.417 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:27:52.535 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:27:52.987 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:27:53.013 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:27:53.116 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:27:53.143 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:27:53.216 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:27:53.249 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#46039a21:0/SimpleConnection@24134cbc [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53796]
+2020-08-06 17:27:53.356 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.412 seconds (JVM running for 5.51)
+2020-08-06 17:27:53.645 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:27:53.646 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:27:53.653 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:28:14.149 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:28:14.746 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:28:14.850 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:28:15.205 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:28:15.220 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:28:15.221 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:28:15.221 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:28:15.360 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:28:15.360 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1194 ms
+2020-08-06 17:28:15.453 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:28:15.454 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:28:15.463 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2b6fcb9f
+2020-08-06 17:28:16.116 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:28:16.116 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:28:16.239 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:28:16.698 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:28:16.709 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:28:16.827 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:28:16.854 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:28:16.931 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:28:16.967 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#64deb58f:0/SimpleConnection@59c43561 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 53840]
+2020-08-06 17:28:17.071 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.745 seconds (JVM running for 4.942)
+2020-08-06 17:28:17.726 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:28:17.726 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:28:17.734 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:41:30.554 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:41:31.325 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:41:31.427 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:41:31.818 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:41:31.834 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:41:31.835 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:41:31.835 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:41:31.981 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:41:31.982 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1410 ms
+2020-08-06 17:41:32.059 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:41:32.059 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:41:32.070 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@75d4a80f
+2020-08-06 17:41:32.568 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 17:41:32.706 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:41:32.706 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:41:32.820 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:41:33.273 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:41:33.283 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:41:33.401 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:41:33.429 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:41:33.522 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:41:33.583 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#72eb6200:0/SimpleConnection@2478b629 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 54970]
+2020-08-06 17:41:33.754 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.255 seconds (JVM running for 5.37)
+2020-08-06 17:41:34.204 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:41:34.204 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:41:34.212 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 8 ms
+2020-08-06 17:41:47.053 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:41:47.689 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:41:47.796 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:41:48.157 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:41:48.171 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:41:48.172 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:41:48.172 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:41:48.310 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:41:48.310 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1237 ms
+2020-08-06 17:41:48.397 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:41:48.398 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:41:48.408 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@445bb139
+2020-08-06 17:41:48.926 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 17:41:49.060 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:41:49.061 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:41:49.174 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:41:49.625 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:41:49.635 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:41:49.750 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:41:49.778 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:41:49.868 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:41:49.905 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#58b5a2f3:0/SimpleConnection@350da119 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55019]
+2020-08-06 17:41:50.028 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.863 seconds (JVM running for 4.988)
+2020-08-06 17:41:50.615 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:41:50.616 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:41:50.622 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-06 17:42:01.798 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:42:02.523 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:42:02.632 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:42:03.005 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:42:03.021 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:42:03.021 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:42:03.021 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:42:03.156 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:42:03.157 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1340 ms
+2020-08-06 17:42:03.262 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:42:03.263 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:42:03.273 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@10b1a751
+2020-08-06 17:42:03.801 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 17:42:03.945 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:42:03.945 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:42:04.072 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:42:04.554 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:42:04.564 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:42:04.694 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:42:04.723 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:42:04.802 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:42:04.837 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#7b477141:0/SimpleConnection@447fa959 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55062]
+2020-08-06 17:42:04.954 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.048 seconds (JVM running for 5.319)
+2020-08-06 17:42:05.111 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:42:05.112 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:42:05.119 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:43:28.975 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:43:29.664 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:43:29.778 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:43:30.161 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:43:30.176 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:43:30.176 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:43:30.177 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:43:30.316 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:43:30.316 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1320 ms
+2020-08-06 17:43:30.398 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:43:30.400 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:43:30.410 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1e9469b8
+2020-08-06 17:43:31.111 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:43:31.111 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:43:31.229 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:43:31.685 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:43:31.694 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:43:31.814 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:43:31.858 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:43:31.933 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:43:31.967 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#1668919e:0/SimpleConnection@5fef0c19 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55217]
+2020-08-06 17:43:32.143 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.266 seconds (JVM running for 5.409)
+2020-08-06 17:43:32.514 [RMI TCP Connection(5)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:43:32.514 [RMI TCP Connection(5)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:43:32.521 [RMI TCP Connection(5)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 17:44:48.442 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 17:44:49.029 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 17:44:49.136 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 17:44:49.494 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 17:44:49.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:44:49.509 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 17:44:49.509 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 17:44:49.645 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 17:44:49.646 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1186 ms
+2020-08-06 17:44:49.722 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:44:49.723 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:44:49.732 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4adc663e
+2020-08-06 17:44:50.373 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 17:44:50.374 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 17:44:50.486 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 17:44:50.926 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 17:44:50.936 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 17:44:51.070 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 17:44:51.099 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 17:44:51.176 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 17:44:51.205 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#3d20e575:0/SimpleConnection@119290b9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 55326]
+2020-08-06 17:44:51.283 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.838 seconds (JVM running for 4.967)
+2020-08-06 17:44:51.648 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 17:44:51.649 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 17:44:51.655 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-06 18:03:30.117 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 18:03:30.720 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 18:03:30.843 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 18:03:31.232 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 18:03:31.249 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:03:31.250 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 18:03:31.250 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:03:31.391 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:03:31.391 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1255 ms
+2020-08-06 18:03:31.476 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:03:31.477 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:03:31.485 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1937eaff
+2020-08-06 18:03:31.994 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 18:03:32.135 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:03:32.136 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:03:32.260 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:03:32.716 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 18:03:32.726 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 18:03:32.860 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:03:32.888 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 18:03:32.964 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 18:03:33.003 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#28a9494b:0/SimpleConnection@5e905f2c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56772]
+2020-08-06 18:03:33.129 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.175 seconds (JVM running for 5.506)
+2020-08-06 18:03:33.742 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:03:33.742 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:03:33.749 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 18:04:03.250 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 18:04:03.929 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 18:04:04.046 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 18:04:04.398 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 18:04:04.412 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:04:04.413 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 18:04:04.413 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:04:04.544 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:04:04.544 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1271 ms
+2020-08-06 18:04:04.639 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:04:04.640 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:04:04.648 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@67514bdd
+2020-08-06 18:04:05.162 [main] ERROR com.shenxu.zuul.util.HuaweiSaasUtil(40) decryptMobilePhoneOrEMail - 华为saas在解密手机号或者邮箱的时候出现异常，异常信息：msg = Input length must be multiple of 16 when decrypting with padded cipher
+2020-08-06 18:04:05.302 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:04:05.303 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:04:05.427 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:04:05.908 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 18:04:05.918 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 18:04:06.039 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:04:06.067 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 18:04:06.152 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 18:04:06.190 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#1e692555:0/SimpleConnection@6544899b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56819]
+2020-08-06 18:04:06.331 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.161 seconds (JVM running for 5.397)
+2020-08-06 18:04:07.020 [RMI TCP Connection(1)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:04:07.020 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:04:07.027 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 18:04:34.573 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 18:04:35.171 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 18:04:35.277 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 18:04:35.652 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 18:04:35.667 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:04:35.668 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 18:04:35.668 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:04:35.805 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:04:35.806 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1215 ms
+2020-08-06 18:04:35.887 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:04:35.888 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:04:35.896 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@17273273
+2020-08-06 18:04:36.574 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:04:36.574 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:04:36.690 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:04:37.157 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 18:04:37.172 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 18:04:37.290 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:04:37.333 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 18:04:37.409 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 18:04:37.452 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#45c9b3:0/SimpleConnection@2ca54da9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 56870]
+2020-08-06 18:04:37.548 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.133 seconds (JVM running for 5.364)
+2020-08-06 18:04:38.173 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:04:38.173 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:04:38.180 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 18:21:40.554 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 18:21:41.469 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 18:21:41.572 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 18:21:41.998 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 18:21:42.015 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:21:42.015 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 18:21:42.016 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 18:21:42.163 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 18:21:42.163 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1590 ms
+2020-08-06 18:21:42.248 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:21:42.249 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:21:42.259 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@788ddc1f
+2020-08-06 18:21:42.899 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 18:21:42.899 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 18:21:43.027 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 18:21:43.487 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 18:21:43.498 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 18:21:43.627 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 18:21:43.656 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 18:21:43.734 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 18:21:43.768 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#65fe2691:0/SimpleConnection@1e226bcd [delegate=amqp://guest@127.0.0.1:5672/, localPort= 58606]
+2020-08-06 18:21:43.852 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.202 seconds (JVM running for 5.435)
+2020-08-06 18:21:44.447 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 18:21:44.447 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 18:21:44.454 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-06 19:32:53.687 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-06 19:32:54.623 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-06 19:32:54.734 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-06 19:32:55.163 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8050 (http)
+2020-08-06 19:32:55.179 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8050"]
+2020-08-06 19:32:55.180 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-06 19:32:55.180 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-06 19:32:55.330 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-06 19:32:55.330 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1623 ms
+2020-08-06 19:32:55.409 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 19:32:55.410 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 19:32:55.419 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3c3c4a71
+2020-08-06 19:32:56.070 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-06 19:32:56.070 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-06 19:32:56.184 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-06 19:32:56.633 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-06 19:32:56.643 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-06 19:32:56.764 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8050"]
+2020-08-06 19:32:56.795 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8050 (http) with context path ''
+2020-08-06 19:32:56.869 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-06 19:32:56.913 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#76d72b5b:0/SimpleConnection@478fb7dc [delegate=amqp://guest@127.0.0.1:5672/, localPort= 64084]
+2020-08-06 19:32:57.035 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.151 seconds (JVM running for 5.267)
+2020-08-06 19:32:57.288 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-06 19:32:57.288 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-06 19:32:57.294 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms

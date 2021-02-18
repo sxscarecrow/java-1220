@@ -1,0 +1,564 @@
+2020-08-05 17:34:13.752 [http-nio-8500-exec-8] INFO  com.shenxu.zuul.controller.TestController(18) test - 看看你是不是log4j2
+2020-08-05 17:34:13.767 [http-nio-8500-exec-8] ERROR com.shenxu.zuul.config.ExceptionHandlerConfig(79) handleException - com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String java.lang.ClassCastException: com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String
+	at org.springframework.http.converter.StringHttpMessageConverter.addDefaultHeaders(StringHttpMessageConverter.java:44) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:211) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+
+2020-08-05 17:34:16.247 [http-nio-8500-exec-9] INFO  com.shenxu.zuul.controller.TestController(18) test - 看看你是不是log4j2
+2020-08-05 17:34:16.249 [http-nio-8500-exec-9] ERROR com.shenxu.zuul.config.ExceptionHandlerConfig(79) handleException - com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String java.lang.ClassCastException: com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String
+	at org.springframework.http.converter.StringHttpMessageConverter.addDefaultHeaders(StringHttpMessageConverter.java:44) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:211) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+
+2020-08-04 20:00:58.854 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:00:59.683 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:00:59.791 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=85bb6b4e-632b-30bb-87b0-29ba16ab9dab
+2020-08-04 20:01:00.305 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:01:00.321 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:01:00.322 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:01:00.322 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:01:00.491 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:01:00.491 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1620 ms
+2020-08-04 20:01:00.583 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:01:00.584 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:01:00.597 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@127a7272
+2020-08-04 20:01:01.316 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:01:01.316 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:01:01.427 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:01:01.902 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:01:01.911 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:01:02.025 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:01:02.065 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:01:02.147 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:01:02.188 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#2806d6da:0/SimpleConnection@149274cb [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61404]
+2020-08-04 20:01:02.282 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 4.666 seconds (JVM running for 6.19)
+2020-08-04 20:01:02.821 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:01:02.822 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:01:02.834 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 12 ms
+2020-08-04 20:01:23.809 [http-nio-8500-exec-1] ERROR com.shenxu.zuul.config.ExceptionHandlerConfig(79) handleException - com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String java.lang.ClassCastException: com.shenxu.zuul.domain.result.Result cannot be cast to java.lang.String
+	at org.springframework.http.converter.StringHttpMessageConverter.addDefaultHeaders(StringHttpMessageConverter.java:44) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.http.converter.AbstractHttpMessageConverter.write(AbstractHttpMessageConverter.java:211) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.AbstractMessageConverterMethodProcessor.writeWithMessageConverters(AbstractMessageConverterMethodProcessor.java:290) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestResponseBodyMethodProcessor.handleReturnValue(RequestResponseBodyMethodProcessor.java:181) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.method.support.HandlerMethodReturnValueHandlerComposite.handleReturnValue(HandlerMethodReturnValueHandlerComposite.java:82) ~[spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:123) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:626) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883) [spring-webmvc-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733) [tomcat-embed-core-9.0.37.jar:4.0.FR]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) [tomcat-embed-websocket-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93) [spring-boot-actuator-2.3.2.RELEASE.jar:2.3.2.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119) [spring-web-5.2.8.RELEASE.jar:5.2.8.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:541) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:373) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1589) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [?:1.8.0_201]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [?:1.8.0_201]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.37.jar:9.0.37]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+
+2020-08-04 20:01:54.750 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:01:55.316 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:01:55.413 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=85bb6b4e-632b-30bb-87b0-29ba16ab9dab
+2020-08-04 20:01:55.757 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:01:55.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:01:55.772 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:01:55.772 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:01:55.923 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:01:55.923 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1158 ms
+2020-08-04 20:01:55.999 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:01:56.000 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:01:56.009 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4596f8f3
+2020-08-04 20:01:56.585 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:01:56.586 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:01:56.694 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:01:57.128 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:01:57.138 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:01:57.257 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:01:57.282 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:01:57.365 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:01:57.398 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#76a14c8d:0/SimpleConnection@380ce5a3 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61448]
+2020-08-04 20:01:57.457 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.725 seconds (JVM running for 4.847)
+2020-08-04 20:01:57.755 [RMI TCP Connection(1)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:01:57.755 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:01:57.760 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:06:25.804 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:06:26.386 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:06:26.486 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=85bb6b4e-632b-30bb-87b0-29ba16ab9dab
+2020-08-04 20:06:26.838 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:06:26.852 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:06:26.852 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:06:26.853 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:06:26.983 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:06:26.984 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1161 ms
+2020-08-04 20:06:27.056 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:06:27.057 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:06:27.066 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@2f84acf7
+2020-08-04 20:06:27.666 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:06:27.666 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:06:27.776 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:06:28.247 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:06:28.258 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:06:28.379 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:06:28.428 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:06:28.500 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:06:28.535 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#66f28a1f:0/SimpleConnection@58feb6b0 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61647]
+2020-08-04 20:06:28.602 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.958 seconds (JVM running for 5.201)
+2020-08-04 20:06:29.171 [RMI TCP Connection(5)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:06:29.171 [RMI TCP Connection(5)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:06:29.177 [RMI TCP Connection(5)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-04 20:07:59.828 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:08:00.441 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:08:00.545 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=85bb6b4e-632b-30bb-87b0-29ba16ab9dab
+2020-08-04 20:08:00.892 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:08:00.907 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:08:00.908 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:08:00.908 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:08:01.053 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:08:01.054 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1208 ms
+2020-08-04 20:08:01.135 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:08:01.136 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:08:01.144 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@4821aa9f
+2020-08-04 20:08:01.748 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:08:01.748 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:08:01.861 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:08:02.287 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:08:02.297 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:08:02.410 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:08:02.438 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:08:02.513 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:08:02.550 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#7beae796:0/SimpleConnection@6221b13b [delegate=amqp://guest@127.0.0.1:5672/, localPort= 61709]
+2020-08-04 20:08:02.629 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.761 seconds (JVM running for 4.968)
+2020-08-04 20:08:03.501 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:08:03.501 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:08:03.507 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:17:45.700 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:17:46.408 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:17:46.518 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:17:46.866 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:17:46.882 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:17:46.883 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:17:46.883 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:17:47.029 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:17:47.029 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1311 ms
+2020-08-04 20:17:47.104 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:17:47.105 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:17:47.113 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1b1c538d
+2020-08-04 20:17:47.697 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:17:47.697 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:17:47.803 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:17:48.240 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:17:48.248 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:17:48.360 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:17:48.388 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:17:48.460 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:17:48.491 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#7fc420b8:0/SimpleConnection@2dd63e3 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62079]
+2020-08-04 20:17:48.601 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.769 seconds (JVM running for 5.003)
+2020-08-04 20:17:49.246 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:17:49.246 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:17:49.252 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-04 20:19:45.883 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:19:46.500 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:19:46.601 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:19:46.949 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:19:46.964 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:19:46.964 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:19:46.965 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:19:47.103 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:19:47.103 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1202 ms
+2020-08-04 20:19:47.182 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:19:47.182 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:19:47.191 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@254f906e
+2020-08-04 20:19:47.778 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:19:47.779 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:19:47.888 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:19:48.320 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:19:48.328 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:19:48.443 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:19:48.471 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:19:48.546 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:19:48.584 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#3c8a7e38:0/SimpleConnection@70b6db83 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62175]
+2020-08-04 20:19:48.705 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.778 seconds (JVM running for 5.15)
+2020-08-04 20:19:49.094 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:19:49.094 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:19:49.101 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-04 20:20:32.806 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:20:33.379 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:20:33.482 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:20:33.826 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:20:33.839 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:20:33.840 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:20:33.840 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:20:33.975 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:20:33.975 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1152 ms
+2020-08-04 20:20:34.050 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:20:34.050 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:20:34.059 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@72fd8a3c
+2020-08-04 20:20:34.649 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:20:34.649 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:20:34.756 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:20:35.187 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:20:35.196 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:20:35.318 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:20:35.347 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:20:35.418 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:20:35.468 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#76a805b7:0/SimpleConnection@3f857e08 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62252]
+2020-08-04 20:20:35.567 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.594 seconds (JVM running for 4.728)
+2020-08-04 20:20:35.938 [RMI TCP Connection(1)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:20:35.938 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:20:35.943 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:22:37.039 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:22:37.638 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:22:37.738 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:22:38.088 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:22:38.102 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:22:38.102 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:22:38.103 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:22:38.229 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:22:38.230 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1171 ms
+2020-08-04 20:22:38.324 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:22:38.324 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:22:38.333 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@23f86d8a
+2020-08-04 20:22:38.931 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:22:38.931 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:22:39.041 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:22:39.489 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:22:39.500 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:22:39.617 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:22:39.646 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:22:39.724 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:22:39.761 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#7cfb4736:0/SimpleConnection@626b639e [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62355]
+2020-08-04 20:22:39.877 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.765 seconds (JVM running for 4.836)
+2020-08-04 20:22:40.188 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:22:40.188 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:22:40.193 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:23:51.105 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:23:51.838 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:23:52.036 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:23:52.571 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:23:52.589 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:23:52.590 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:23:52.590 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:23:52.738 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:23:52.739 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1613 ms
+2020-08-04 20:23:52.866 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:23:52.867 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:23:52.942 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@5729b410
+2020-08-04 20:23:53.846 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:23:53.846 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:23:53.981 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:23:54.540 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:23:54.553 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:23:54.698 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:23:54.803 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:23:54.876 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:23:54.934 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#700b9e6b:0/SimpleConnection@6dc2279c [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62442]
+2020-08-04 20:23:55.057 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 5.109 seconds (JVM running for 7.283)
+2020-08-04 20:23:55.471 [RMI TCP Connection(1)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:23:55.472 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:23:55.480 [RMI TCP Connection(1)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-04 20:24:53.756 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(647) doShutdown - Waiting for workers to finish.
+2020-08-04 20:24:54.026 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(650) doShutdown - Successfully waited for workers to finish.
+2020-08-04 20:24:54.028 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(647) doShutdown - Waiting for workers to finish.
+2020-08-04 20:24:55.022 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(650) doShutdown - Successfully waited for workers to finish.
+2020-08-04 20:24:55.024 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(647) doShutdown - Waiting for workers to finish.
+2020-08-04 20:24:56.024 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(650) doShutdown - Successfully waited for workers to finish.
+2020-08-04 20:24:56.028 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(647) doShutdown - Waiting for workers to finish.
+2020-08-04 20:24:57.023 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(650) doShutdown - Successfully waited for workers to finish.
+2020-08-04 20:24:57.096 [SpringContextShutdownHook] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(79) contextDestroyed - Stopping filter initializer
+2020-08-04 20:24:57.099 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(1243) shutdown - Shutdown ignored - container is not active already
+2020-08-04 20:24:57.099 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(1243) shutdown - Shutdown ignored - container is not active already
+2020-08-04 20:24:57.100 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(1243) shutdown - Shutdown ignored - container is not active already
+2020-08-04 20:24:57.100 [SpringContextShutdownHook] INFO  org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer(1243) shutdown - Shutdown ignored - container is not active already
+2020-08-04 20:24:57.100 [SpringContextShutdownHook] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(218) shutdown - Shutting down ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:25:00.034 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:25:00.588 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:25:00.702 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:25:01.065 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:25:01.079 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:25:01.080 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:25:01.080 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:25:01.193 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:25:01.193 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1143 ms
+2020-08-04 20:25:01.267 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:25:01.267 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:25:01.277 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@c755b2
+2020-08-04 20:25:01.877 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:25:01.878 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:25:01.982 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:25:02.412 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:25:02.422 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:25:02.531 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:25:02.556 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:25:02.628 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:25:02.656 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#157ec23b:0/SimpleConnection@6bcae9 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62499]
+2020-08-04 20:25:02.740 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.478 seconds (JVM running for 4.849)
+2020-08-04 20:25:03.489 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:25:03.489 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:25:03.496 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 7 ms
+2020-08-04 20:27:58.134 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:27:58.722 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:27:58.822 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:27:59.163 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:27:59.177 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:27:59.178 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:27:59.178 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:27:59.306 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:27:59.306 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1153 ms
+2020-08-04 20:27:59.395 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:27:59.395 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:27:59.403 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@12d5c30e
+2020-08-04 20:27:59.986 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:27:59.987 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:28:00.103 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:28:00.519 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:28:00.528 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:28:00.636 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:28:00.664 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:28:00.743 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:28:00.776 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#40f35e52:0/SimpleConnection@1a531422 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62620]
+2020-08-04 20:28:00.876 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.59 seconds (JVM running for 4.685)
+2020-08-04 20:28:01.268 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:28:01.269 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:28:01.274 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:30:07.727 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:30:08.349 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:30:08.449 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:30:08.787 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:30:08.801 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:30:08.802 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:30:08.802 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:30:08.930 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:30:08.930 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1185 ms
+2020-08-04 20:30:09.032 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:30:09.033 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:30:09.041 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@7412ed6b
+2020-08-04 20:30:09.645 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:30:09.646 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:30:09.758 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:30:10.224 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:30:10.234 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:30:10.355 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:30:10.381 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:30:10.458 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:30:10.492 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#2f4b98f6:0/SimpleConnection@7c7e73c5 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62735]
+2020-08-04 20:30:10.588 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.697 seconds (JVM running for 4.838)
+2020-08-04 20:30:11.354 [RMI TCP Connection(3)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:30:11.354 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:30:11.360 [RMI TCP Connection(3)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 6 ms
+2020-08-04 20:30:14.688 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#2-1] WARN  org.springframework.amqp.rabbit.listener.ConditionalRejectingErrorHandler(129) log - Execution of Rabbit message listener failed. org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:1705) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1595) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1510) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1498) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1489) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1433) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:970) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:916) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1600(SimpleMessageListenerContainer.java:83) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1291) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1197) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: org.springframework.amqp.rabbit.listener.adapter.ReplyFailureException: Failed to send reply with payload 'InvocationResult [returnValue=我是傻逼, returnType=class java.lang.String, bean=com.shenxu.zuul.consumer.FanoutConsumer@6f856e25, method=public java.lang.String com.shenxu.zuul.consumer.FanoutConsumer.receivedC(java.lang.String)]'
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.doHandleResult(AbstractAdaptableMessageListener.java:436) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.handleResult(AbstractAdaptableMessageListener.java:360) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:150) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:133) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1591) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	... 10 more
+Caused by: org.springframework.amqp.AmqpException: Cannot determine ReplyTo message property value: Request message does not contain reply-to property, and no default response Exchange was set.
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.getReplyToAddress(AbstractAdaptableMessageListener.java:516) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.doHandleResult(AbstractAdaptableMessageListener.java:432) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.handleResult(AbstractAdaptableMessageListener.java:360) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:150) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:133) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1591) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	... 10 more
+
+2020-08-04 20:30:57.446 [main] INFO  com.shenxu.zuul.ZuulApplication(651) logStartupProfileInfo - No active profile set, falling back to default profiles: default
+2020-08-04 20:30:58.028 [main] WARN  org.springframework.boot.actuate.endpoint.EndpointId(155) logWarning - Endpoint ID 'hystrix.stream' contains invalid characters, please migrate to a valid format.
+2020-08-04 20:30:58.131 [main] INFO  org.springframework.cloud.context.scope.GenericScope(295) setSerializationId - BeanFactory id=a53026aa-a1ba-382a-9ff4-6a04a126052a
+2020-08-04 20:30:58.481 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(108) initialize - Tomcat initialized with port(s): 8500 (http)
+2020-08-04 20:30:58.495 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Initializing ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:30:58.496 [main] INFO  org.apache.catalina.core.StandardService(173) log - Starting service [Tomcat]
+2020-08-04 20:30:58.496 [main] INFO  org.apache.catalina.core.StandardEngine(173) log - Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-08-04 20:30:58.629 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring embedded WebApplicationContext
+2020-08-04 20:30:58.630 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext(285) prepareWebApplicationContext - Root WebApplicationContext: initialization completed in 1165 ms
+2020-08-04 20:30:58.705 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:30:58.706 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:30:58.715 [main] INFO  com.netflix.config.DynamicPropertyFactory(281) getInstance - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@1a22e0ef
+2020-08-04 20:30:59.301 [main] WARN  com.netflix.config.sources.URLConfigurationSource(121) <init> - No URLs will be polled as dynamic configuration sources.
+2020-08-04 20:30:59.301 [main] INFO  com.netflix.config.sources.URLConfigurationSource(122) <init> - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-08-04 20:30:59.406 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor(181) initialize - Initializing ExecutorService 'applicationTaskExecutor'
+2020-08-04 20:30:59.828 [main] INFO  org.springframework.cloud.netflix.zuul.ZuulFilterInitializer(67) contextInitialized - Starting filter initializer
+2020-08-04 20:30:59.836 [main] INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver(58) <init> - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-08-04 20:30:59.946 [main] INFO  org.apache.coyote.http11.Http11NioProtocol(173) log - Starting ProtocolHandler ["http-nio-8500"]
+2020-08-04 20:30:59.972 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer(220) start - Tomcat started on port(s): 8500 (http) with context path ''
+2020-08-04 20:31:00.047 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(558) connectAddresses - Attempting to connect to: [127.0.0.1:5672]
+2020-08-04 20:31:00.082 [main] INFO  org.springframework.amqp.rabbit.connection.CachingConnectionFactory(511) createBareConnection - Created new connection: rabbitConnectionFactory#36baa049:0/SimpleConnection@586495f1 [delegate=amqp://guest@127.0.0.1:5672/, localPort= 62792]
+2020-08-04 20:31:00.204 [main] INFO  com.shenxu.zuul.ZuulApplication(61) logStarted - Started ZuulApplication in 3.609 seconds (JVM running for 4.786)
+2020-08-04 20:31:00.505 [RMI TCP Connection(2)-172.16.210.43] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/](173) log - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-08-04 20:31:00.506 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(525) initServletBean - Initializing Servlet 'dispatcherServlet'
+2020-08-04 20:31:00.511 [RMI TCP Connection(2)-172.16.210.43] INFO  org.springframework.web.servlet.DispatcherServlet(547) initServletBean - Completed initialization in 5 ms
+2020-08-04 20:31:04.953 [org.springframework.amqp.rabbit.RabbitListenerEndpointContainer#1-1] WARN  org.springframework.amqp.rabbit.listener.ConditionalRejectingErrorHandler(129) log - Execution of Rabbit message listener failed. org.springframework.amqp.rabbit.support.ListenerExecutionFailedException: Listener threw exception
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.wrapToListenerExecutionFailedExceptionIfNeeded(AbstractMessageListenerContainer.java:1705) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1595) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.actualInvokeListener(AbstractMessageListenerContainer.java:1510) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.invokeListener(AbstractMessageListenerContainer.java:1498) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doExecuteListener(AbstractMessageListenerContainer.java:1489) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.executeListener(AbstractMessageListenerContainer.java:1433) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.doReceiveAndExecute(SimpleMessageListenerContainer.java:970) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.receiveAndExecute(SimpleMessageListenerContainer.java:916) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer.access$1600(SimpleMessageListenerContainer.java:83) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.mainLoop(SimpleMessageListenerContainer.java:1291) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.SimpleMessageListenerContainer$AsyncMessageProcessingConsumer.run(SimpleMessageListenerContainer.java:1197) [spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at java.lang.Thread.run(Thread.java:748) [?:1.8.0_201]
+Caused by: org.springframework.amqp.rabbit.listener.adapter.ReplyFailureException: Failed to send reply with payload 'InvocationResult [returnValue=2020-31-217 08:08:04, returnType=class java.lang.String, bean=com.shenxu.zuul.consumer.FanoutConsumer@5c4b4465, method=public java.lang.String com.shenxu.zuul.consumer.FanoutConsumer.receivedC(java.lang.String)]'
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.doHandleResult(AbstractAdaptableMessageListener.java:436) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.handleResult(AbstractAdaptableMessageListener.java:360) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:150) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:133) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1591) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	... 10 more
+Caused by: org.springframework.amqp.AmqpException: Cannot determine ReplyTo message property value: Request message does not contain reply-to property, and no default response Exchange was set.
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.getReplyToAddress(AbstractAdaptableMessageListener.java:516) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.doHandleResult(AbstractAdaptableMessageListener.java:432) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.AbstractAdaptableMessageListener.handleResult(AbstractAdaptableMessageListener.java:360) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.invokeHandlerAndProcessResult(MessagingMessageListenerAdapter.java:150) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.adapter.MessagingMessageListenerAdapter.onMessage(MessagingMessageListenerAdapter.java:133) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	at org.springframework.amqp.rabbit.listener.AbstractMessageListenerContainer.doInvokeListener(AbstractMessageListenerContainer.java:1591) ~[spring-rabbit-2.2.9.RELEASE.jar:2.2.9.RELEASE]
+	... 10 more
+
