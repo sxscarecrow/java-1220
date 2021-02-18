@@ -22,7 +22,7 @@ public class RedisList {
 
     @Test
     public void redisList(){
-        redisCacheComponent.set("qwer", "werew");
+        redisCacheComponent.set("key4", "value4");
         System.out.println(redisCacheComponent.get("qwer"));
     }
 }
