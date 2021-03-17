@@ -45,7 +45,7 @@ public class SelectionSort {
                     maxIndex = j;
                 }
             }
-            // 讲最大值放在第i位
+            // 将最大值放在第i位
             tmp = array[i];
             array[i] = array[maxIndex];
             array[maxIndex] = tmp;
