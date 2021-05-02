@@ -23,7 +23,7 @@ public class TestFilter implements Filter {
         System.out.println("测试一下顺序：这是第一个过滤器");
 
         long start = System.currentTimeMillis();
-        System.out.println("Execute cost="+(System.currentTimeMillis()-start));
+        System.out.println("Execute cost=" + (System.currentTimeMillis() - start));
 
         MDC.put("requestId", StrUtil.uuid());
 

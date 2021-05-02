@@ -6,6 +6,7 @@ import org.springframework.stereotype.Component;
 
 /**
  * 广播模式消费
+ *
  * @author ly
  * @date 2020/8/4 20:13
  */
@@ -30,7 +31,7 @@ public class FanoutConsumer {
     @RabbitListener(queues = "fanout.b")
     @RabbitHandler
     public void receivedC(String msg) {
-        if (msg == null){
+        if (msg == null) {
             System.out.println("该队列没有了消息可供消费");
         }
         System.out.println("[fanout.c] receivedC message: " + msg);

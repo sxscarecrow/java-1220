@@ -7,9 +7,9 @@ import org.springframework.context.annotation.Configuration;
 
 /**
  * 过滤器配置
- *
+ * <p>
  * 说明： 如果使用了 @WebFilter(urlPatterns = "/*", filterName = "testFilter")
- *        和 @ServletComponentScan("com.shenxu.zuul.filter.servlet") 则不需要这个 配置类
+ * 和 @ServletComponentScan("com.shenxu.zuul.filter.servlet") 则不需要这个 配置类
  *
  * @author shen_xu
  * @ClassName FilterConfig

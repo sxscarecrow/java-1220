@@ -15,7 +15,7 @@ public class ScheduledTask {
      * 每五秒执行一次
      */
 //    @Scheduled(cron = "0/2 * * * * ?")
-    public void test(){
+    public void test() {
 
         System.out.println("你好呀，这个不怎么友好的世界");
     }

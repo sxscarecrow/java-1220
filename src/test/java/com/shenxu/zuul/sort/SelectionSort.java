@@ -41,7 +41,7 @@ public class SelectionSort {
             maxIndex = i;
             // 取得数组中元素最大的下标
             for (int j = i + 1; j < array.length; j++) {
-                if (array[j] > array[maxIndex]){
+                if (array[j] > array[maxIndex]) {
                     maxIndex = j;
                 }
             }

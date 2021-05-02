@@ -20,14 +20,13 @@ import java.util.Map;
 public class TestController {
 
     @GetMapping("/test")
-    public Integer test(){
+    public Integer test() {
         return 2047;
     }
 
 
     @PostMapping("demoSaas")
-    public Map<Integer, String> demo(HttpServletRequest request){
-
+    public Map<Integer, String> demo(HttpServletRequest request) {
         Map<String, String[]> paramsMap = request.getParameterMap();
 
         int a = 4;

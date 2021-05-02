@@ -10,11 +10,11 @@ import lombok.Data;
 public class ServiceException extends RuntimeException {
 
     /**
-     *  错误码
+     * 错误码
      */
     private int code;
     /**
-     *  错误信息
+     * 错误信息
      */
     private String msg;
 

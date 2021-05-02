@@ -8,15 +8,14 @@ import java.util.List;
 
 /**
  * 结果集构建
- *
  */
 public class ResultBuilder {
 
     /**
      * 成功结果集
      *
-     * @author  yzh
      * @return Result
+     * @author shenxu
      */
     public static Result success() {
         return success(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMsg(), new ArrayList<>());
@@ -25,9 +24,9 @@ public class ResultBuilder {
     /**
      * 成功结果集
      *
-     * @author  yzh
-     * @param   data  集合列表
+     * @param data 集合列表
      * @return Result
+     * @author shenxu
      */
     public static <T> Result success(List<T> data) {
         return success(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMsg(), data);
@@ -36,9 +35,9 @@ public class ResultBuilder {
     /**
      * 成功结果集
      *
-     * @author  yzh
-     * @param   data  集合列表
+     * @param data 集合列表
      * @return Result
+     * @author shenxu
      */
     public static <T> Result success(int code, String msg, List<T> data) {
         return Result.builder()
@@ -52,9 +51,9 @@ public class ResultBuilder {
     /**
      * 成功结果集
      *
-     * @author  yzh
-     * @param   data  对象
+     * @param data 对象
      * @return Result
+     * @author shenxu
      */
     public static <T> Result success(T data) {
         return success(ResultEnum.SUCCESS.getCode(), ResultEnum.SUCCESS.getMsg(), data);
@@ -62,11 +61,12 @@ public class ResultBuilder {
 
     /**
      * 成功结果集
-     * @author  yzh
-     * @param   code  状态码
-     * @param   msg   消息
-     * @param   data  对象数据
+     *
+     * @param code 状态码
+     * @param msg  消息
+     * @param data 对象数据
      * @return Result
+     * @author shexu
      */
     public static <T> Result success(int code, String msg, T data) {
         return Result.builder()
@@ -79,8 +79,9 @@ public class ResultBuilder {
 
     /**
      * 成功结果集
-     * @author  yzh
+     *
      * @return Result
+     * @author shenxu
      */
     public static Result error() {
         return error(ResultEnum.ERROR.getCode(), ResultEnum.ERROR.getMsg(), null);
@@ -88,9 +89,10 @@ public class ResultBuilder {
 
     /**
      * 错误结果集
-     * @author  yzh
-     * @param   msg   消息
+     *
+     * @param msg 消息
      * @return Result
+     * @author shenxu
      */
     public static Result error(String msg) {
         return error(ResultEnum.ERROR.getCode(), msg, null);
@@ -98,10 +100,11 @@ public class ResultBuilder {
 
     /**
      * 错误结果集
-     * @author  yzh
-     * @param   code  状态码
-     * @param   msg   消息
+     *
+     * @param code 状态码
+     * @param msg  消息
      * @return Result
+     * @author shenxu
      */
     public static Result error(int code, String msg) {
         return error(code, msg, null);
@@ -109,11 +112,12 @@ public class ResultBuilder {
 
     /**
      * 错误结果集
-     * @author  yzh
-     * @param   code  状态码
-     * @param   msg   消息
-     * @param   data  集合数据
+     *
+     * @param code 状态码
+     * @param msg  消息
+     * @param data 集合数据
      * @return Result
+     * @author shenxu
      */
     public static <T> Result error(int code, String msg, List<T> data) {
         return Result.builder()
@@ -126,11 +130,12 @@ public class ResultBuilder {
 
     /**
      * 错误结果集
-     * @author  yzh
-     * @param   code  状态码
-     * @param   msg   消息
-     * @param   data  对象数据
+     *
+     * @param code 状态码
+     * @param msg  消息
+     * @param data 对象数据
      * @return Result
+     * @author shenxu
      */
     public static <T> Result error(int code, String msg, T data) {
         return Result.builder()

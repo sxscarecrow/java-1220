@@ -15,10 +15,10 @@ import java.io.IOException;
  */
 
 /*
-*  @Order(4)
-*  这个注解并不会生效 如果想改变其执行顺序 需要写配置类用于控制 具体见 FilterConfig.class 默认的执行顺序是 filterName 的 字母升序执行
-*
-*  initParams = @WebInitParam(name = "hh", value = "hello") 初始化参数 可以 在 init() 用 filterConfig 获取
+ *  @Order(4)
+ *  这个注解并不会生效 如果想改变其执行顺序 需要写配置类用于控制 具体见 FilterConfig.class 默认的执行顺序是 filterName 的 字母升序执行
+ *
+ *  initParams = @WebInitParam(name = "hh", value = "hello") 初始化参数 可以 在 init() 用 filterConfig 获取
  */
 
 @WebFilter(urlPatterns = "/*", filterName = "demoFilter", initParams = @WebInitParam(name = "hh", value = "hello"))

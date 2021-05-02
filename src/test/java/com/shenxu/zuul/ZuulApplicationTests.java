@@ -1,7 +1,6 @@
 package com.shenxu.zuul;
 
-import com.shenxu.zuul.config.RedisConfig;
-import com.shenxu.zuul.properties.ShenxuProperties;
+import com.shenxu.zuul.domain.properties.ShenxuProperty;
 import com.shenxu.zuul.util.HuaweiSaasUtil;
 import com.shenxu.zuul.util.RedisCacheComponent;
 import org.junit.jupiter.api.Test;
@@ -16,7 +15,7 @@ import java.util.Set;
 class ZuulApplicationTests {
 
     @Autowired
-    private ShenxuProperties shenxuProperties;
+    private ShenxuProperty shenxuProperty;
 
     @Autowired
     private RedisTemplate redisTemplate;
@@ -29,7 +28,7 @@ class ZuulApplicationTests {
     }
 
     @Test
-    public void test(){
+    public void test() {
         String key = "dc8c2cfb-f67c-4912-96ca-a9a9ce705ff4";
         String mobile = HuaweiSaasUtil.decryptMobilePhoneOrEMail(key, "30xXRvwZ4cf69365hNwQMrzxAH4SQ8nNbl3U1g==", 40);
         System.out.println(mobile);
@@ -39,13 +38,13 @@ class ZuulApplicationTests {
      * 测试获取配置项
      */
     @Test
-    void properties(){
-        System.out.println(shenxuProperties.getHost() + " : " + shenxuProperties.getPort());
-        System.out.println(shenxuProperties.getClass());
+    void properties() {
+        System.out.println(shenxuProperty.getHost() + " : " + shenxuProperty.getPort());
+        System.out.println(shenxuProperty.getClass());
     }
 
     @Test
-    void redis(){
+    void redis() {
         redisTemplate.opsForValue().set("SHENXU", "SHENXU");
         redisCacheComponent.set("sss", "SHENXU");
     }

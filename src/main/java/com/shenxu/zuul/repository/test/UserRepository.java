@@ -2,7 +2,7 @@ package com.shenxu.zuul.repository.test;
 
 import com.baomidou.mybatisplus.extension.service.impl.ServiceImpl;
 import com.shenxu.zuul.mapper.Test.UserMapper;
-import com.shenxu.zuul.domain.entity.Test.User;
+import com.shenxu.zuul.domain.po.Test.User;
 
 /**
  * @author ly

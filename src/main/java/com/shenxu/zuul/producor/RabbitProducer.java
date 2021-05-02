@@ -21,7 +21,7 @@ public class RabbitProducer {
     private AmqpTemplate rabbitTemplate;
 
     public void sendDemoQueue() throws InterruptedException {
-        for (int i = 0; i < NUM; i++){
+        for (int i = 0; i < NUM; i++) {
             Date date = new Date();
             String dateString = new SimpleDateFormat("YYYY-mm-DD hh:MM:ss").format(date);
             System.out.println("[demoQueue] send msg: " + dateString);

@@ -7,6 +7,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  * 拦截器的配置类
+ *
  * @author shen_xu
  * @ClassName InterceptorConfig
  */

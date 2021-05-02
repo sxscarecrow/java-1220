@@ -21,7 +21,7 @@ public class RedisList {
     private RedisCacheComponent redisCacheComponent;
 
     @Test
-    public void redisList(){
+    public void redisList() {
         redisCacheComponent.set("key4", "value4");
         System.out.println(redisCacheComponent.get("qwer"));
     }

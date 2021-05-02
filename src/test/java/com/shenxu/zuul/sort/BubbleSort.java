@@ -40,10 +40,10 @@ public class BubbleSort {
         for (int i = 0; i < array.length - 1; i++) {
             for (int j = 0; j < array.length - 1 - i; j++) {
                 // 比较相邻的两个元素的大小
-                if (array[j] > array[j+1]){
+                if (array[j] > array[j + 1]) {
                     // 交换相邻的两个元素的值
-                    tmp = array[j+1];
-                    array[j+1] = array[j];
+                    tmp = array[j + 1];
+                    array[j + 1] = array[j];
                     array[j] = tmp;
                 }
             }

@@ -1,4 +1,4 @@
-package com.shenxu.zuul.domain.entity.Test;
+package com.shenxu.zuul.domain.po.Test;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;

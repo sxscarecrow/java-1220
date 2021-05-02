@@ -50,13 +50,13 @@ public class RedisCacheComponent {
             boolean ret = true;
             String[] arr$ = keys;
             int len$ = keys.length;
-            for(int i$ = 0; i$ < len$; ++i$) {
+            for (int i$ = 0; i$ < len$; ++i$) {
                 String key = arr$[i$];
                 if (!this.isValidKey(key)) {
                     ret = false;
                     break;
                 }
-                if(StringUtils.isBlank(key)) {
+                if (StringUtils.isBlank(key)) {
                     continue;
                 }
                 this.redisTemplate.delete(key);
@@ -106,10 +106,10 @@ public class RedisCacheComponent {
             return false;
         } else {
             if (value instanceof String) {
-                this.redisTemplate.opsForValue().set(key, value.toString(), (long)secs, TimeUnit.SECONDS);
+                this.redisTemplate.opsForValue().set(key, value.toString(), (long) secs, TimeUnit.SECONDS);
             } else {
                 String objectJson = JsonUtils.toJsonString(value);
-                this.redisTemplate.opsForValue().set(key, objectJson, (long)secs,TimeUnit.SECONDS);
+                this.redisTemplate.opsForValue().set(key, objectJson, (long) secs, TimeUnit.SECONDS);
             }
             return true;
         }
@@ -129,9 +129,9 @@ public class RedisCacheComponent {
             Map<String, String> mapTmp = new HashMap<>();
             Iterator i$ = map.entrySet().iterator();
 
-            while(i$.hasNext()) {
-                Map.Entry<String, Object> mm = (Map.Entry)i$.next();
-                String key = (String)mm.getKey();
+            while (i$.hasNext()) {
+                Map.Entry<String, Object> mm = (Map.Entry) i$.next();
+                String key = (String) mm.getKey();
                 if (this.isValidKey(key)) {
                     String objectJson = JsonUtils.toJsonString(mm.getValue());
                     mapTmp.put(key, objectJson);
@@ -153,7 +153,7 @@ public class RedisCacheComponent {
     public Long getLong(String key) {
         Long value = 0L;
         String str = this.get(key);
-        if(StringUtils.isNumeric(str)) {
+        if (StringUtils.isNumeric(str)) {
             value = Long.parseLong(str);
         }
         return value;
@@ -244,8 +244,8 @@ public class RedisCacheComponent {
         Map<String, String> map = new HashMap();
         Iterator i$ = hash.entrySet().iterator();
 
-        while(i$.hasNext()) {
-            Map.Entry<String, Object> entry = (Map.Entry)i$.next();
+        while (i$.hasNext()) {
+            Map.Entry<String, Object> entry = (Map.Entry) i$.next();
             map.put(entry.getKey(), this.convertObjs(entry.getValue()));
         }
 
@@ -265,8 +265,8 @@ public class RedisCacheComponent {
             List<T> retList = new ArrayList();
             Iterator i$ = list.iterator();
 
-            while(i$.hasNext()) {
-                String value = (String)i$.next();
+            while (i$.hasNext()) {
+                String value = (String) i$.next();
                 retList.add(this.convertObjs(value, clazz));
             }
 
@@ -305,6 +305,7 @@ public class RedisCacheComponent {
     public Long hlen(String key) {
         return this.redisTemplate.opsForHash().size(key);
     }
+
     public Long llen(String key) {
         return this.redisTemplate.opsForList().size(key);
     }
@@ -330,9 +331,9 @@ public class RedisCacheComponent {
         Map<String, T> retMap = new HashMap();
         Iterator i$ = map.entrySet().iterator();
 
-        while(i$.hasNext()) {
-            Map.Entry<String, String> entry = (Map.Entry)i$.next();
-            retMap.put(entry.getKey(), this.convertObjs((String)entry.getValue(), clazz));
+        while (i$.hasNext()) {
+            Map.Entry<String, String> entry = (Map.Entry) i$.next();
+            retMap.put(entry.getKey(), this.convertObjs((String) entry.getValue(), clazz));
         }
         return retMap;
     }
@@ -359,7 +360,7 @@ public class RedisCacheComponent {
         if (values != null && values.length != 0) {
             String[] strs = new String[values.length];
 
-            for(int i = 0; i < values.length; ++i) {
+            for (int i = 0; i < values.length; ++i) {
                 Object value = values[i];
                 if (value != null) {
                     strs[i] = this.convertObjs(value);
@@ -375,7 +376,7 @@ public class RedisCacheComponent {
         if (values != null && values.length != 0) {
             Object[] strs = new Object[values.length];
 
-            for(int i = 0; i < values.length; ++i) {
+            for (int i = 0; i < values.length; ++i) {
                 Object value = values[i];
                 if (value != null) {
                     strs[i] = this.convertObjs(value);
@@ -410,8 +411,8 @@ public class RedisCacheComponent {
         Set<T> ret = new HashSet();
         Iterator i$ = set.iterator();
 
-        while(i$.hasNext()) {
-            String value = (String)i$.next();
+        while (i$.hasNext()) {
+            String value = (String) i$.next();
             ret.add(this.convertObjs(value, clazz));
         }
         return ret;
@@ -442,23 +443,23 @@ public class RedisCacheComponent {
                 List<String> set = this.redisTemplate.opsForSet().randomMembers(key, Math.abs(count));
                 i$ = set.iterator();
 
-                while(i$.hasNext()) {
-                    value = (String)i$.next();
+                while (i$.hasNext()) {
+                    value = (String) i$.next();
                     ret.add(this.convertObjs(value, clazz));
                 }
             } else {
                 Set<String> set = this.redisTemplate.opsForSet().distinctRandomMembers(key, count);
                 i$ = set.iterator();
 
-                while(i$.hasNext()) {
-                    value = (String)i$.next();
+                while (i$.hasNext()) {
+                    value = (String) i$.next();
                     ret.add(this.convertObjs(value, clazz));
                 }
             }
 
             return ret;
         } else {
-            String value = (String)this.redisTemplate.opsForSet().randomMember(key);
+            String value = (String) this.redisTemplate.opsForSet().randomMember(key);
             ret.add(this.convertObjs(value, clazz));
             return ret;
         }
@@ -474,7 +475,7 @@ public class RedisCacheComponent {
 
     public Long lpushForTime(String key, long timeout, Object... values) {
         Long ret = this.lpush(key, values);
-        if (ret != null && ret == (long)values.length) {
+        if (ret != null && ret == (long) values.length) {
             this.redisTemplate.expire(key, timeout, TimeUnit.SECONDS);
         }
 
@@ -489,20 +490,22 @@ public class RedisCacheComponent {
         return lrange(key, 0L, -1L, clazz);
     }
 
-    public <T> List<T> lrange(String key,long offset,long count, Class<T> clazz) {
+    public <T> List<T> lrange(String key, long offset, long count, Class<T> clazz) {
         List<String> list = this.redisTemplate.opsForList().range(key, offset, count);
         List<T> ret = new ArrayList();
         Iterator i$ = list.iterator();
 
-        while(i$.hasNext()) {
-            String value = (String)i$.next();
+        while (i$.hasNext()) {
+            String value = (String) i$.next();
             ret.add(this.convertObjs(value, clazz));
         }
         return ret;
     }
+
     public void ltrim(String key, long start, long end) {
         this.redisTemplate.opsForList().trim(key, start, end);
     }
+
     public long lrem(String key, long count, Object value) {
         return !this.isValidKey(key) ? 0L : this.redisTemplate.opsForList().remove(key, count, value);
     }
@@ -581,45 +584,53 @@ public class RedisCacheComponent {
     public boolean zadd(String key, long score, Object value) {
         return this.redisTemplate.opsForZSet().add(key, this.convertObjs(value), new Long(score).doubleValue());
     }
+
     public boolean zadd(String key, double score, Object value) {
         return this.redisTemplate.opsForZSet().add(key, this.convertObjs(value), score);
     }
-    public Double zincrBy(String key,  Object value,double score) {
+
+    public Double zincrBy(String key, Object value, double score) {
         return this.redisTemplate.opsForZSet().incrementScore(key, this.convertObjs(value), score);
     }
+
     public Long zcard(String key) {
         return this.redisTemplate.opsForZSet().zCard(key);
     }
+
     public Set<String> zrange(String key, long start, long end) {
         return this.redisTemplate.opsForZSet().range(key, start, end);
     }
+
     public Map<String, Double> zrangeWithScore(String key, long start, long end) {
         Map<String, Double> ret = new HashMap<>();
-        Set<ZSetOperations.TypedTuple<String>> zset= this.redisTemplate.opsForZSet().rangeWithScores(key, start, end);
+        Set<ZSetOperations.TypedTuple<String>> zset = this.redisTemplate.opsForZSet().rangeWithScores(key, start, end);
         for (ZSetOperations.TypedTuple<String> type : zset) {
             ret.put(type.getValue(), type.getScore());
         }
         return ret;
     }
+
     public Set<String> zrangeAll(String key) {
         return this.redisTemplate.opsForZSet().range(key, 0L, -1L);
     }
 
     /**
      * 获取ZSET中指定INDEX条数的分数
+     *
      * @param key
      * @param index
      * @return
      */
     public Double zScoreWith(String key, long index) {
         ZSetOperations operations = this.redisTemplate.opsForZSet();
-        Set<String> set=this.redisTemplate.opsForZSet().reverseRange(key, index, index);
+        Set<String> set = this.redisTemplate.opsForZSet().reverseRange(key, index, index);
         if (set.isEmpty()) {
             return null;
         }
         String value = new ArrayList<>(set).get(0);
         return operations.score(key, value);
     }
+
     public <T> List<T> zrange(String key, long start, long end, Class<T> clazz) {
         List<T> ret = new ArrayList();
         Set<String> values = this.redisTemplate.opsForZSet().range(key, start, end);
@@ -627,8 +638,8 @@ public class RedisCacheComponent {
         if (values != null && values.size() > 0) {
             Iterator i$ = values.iterator();
 
-            while(i$.hasNext()) {
-                String value = (String)i$.next();
+            while (i$.hasNext()) {
+                String value = (String) i$.next();
                 ret.add(this.convertObjs(value, clazz));
             }
         }
@@ -646,8 +657,8 @@ public class RedisCacheComponent {
         if (values != null && values.size() > 0) {
             Iterator i$ = values.iterator();
 
-            while(i$.hasNext()) {
-                String value = (String)i$.next();
+            while (i$.hasNext()) {
+                String value = (String) i$.next();
                 ret.add(this.convertObjs(value, clazz));
             }
         }
@@ -666,6 +677,7 @@ public class RedisCacheComponent {
     public Set<String> zrangebyscore(String key, double min, double max, long offset, long count) {
         return this.redisTemplate.opsForZSet().rangeByScore(key, min, max, offset, count);
     }
+
     public Set<String> zrevrangebyscore(String key, double min, double max, long offset, long count) {
         return this.redisTemplate.opsForZSet().reverseRangeByScore(key, min, max, offset, count);
     }
@@ -710,7 +722,7 @@ public class RedisCacheComponent {
     private String[] convertObjs(Object... values) {
         String[] strs = new String[values.length];
 
-        for(int i = 0; i < values.length; ++i) {
+        for (int i = 0; i < values.length; ++i) {
             Object value = values[i];
             if (value != null) {
                 if (value.getClass() != String.class && value.getClass() != Integer.class && value.getClass() != Integer.TYPE && value.getClass() != Long.class && value.getClass() != Long.TYPE && value.getClass() != Double.class && value.getClass() != Double.TYPE && value.getClass() != Float.class && value.getClass() != Float.TYPE) {
@@ -726,7 +738,7 @@ public class RedisCacheComponent {
 
     private <T> T convertObjs(String value, Class<T> clazz) {
         if (clazz == String.class) {
-            return (T)value;
+            return (T) value;
         } else if (clazz != Integer.class && clazz != Integer.TYPE) {
             if (clazz != Long.class && clazz != Long.TYPE) {
                 if (clazz != Double.class && clazz != Double.TYPE) {
@@ -757,17 +769,18 @@ public class RedisCacheComponent {
         Point point = new Point(Double.parseDouble(lat), Double.parseDouble(lng));
         Distance dist = new Distance(distance, Metrics.KILOMETERS);
         Circle circle = new Circle(point, dist);
-        RedisGeoCommands.GeoRadiusCommandArgs args=RedisGeoCommands.GeoRadiusCommandArgs.newGeoRadiusArgs();//按距离升序排列
+        RedisGeoCommands.GeoRadiusCommandArgs args = RedisGeoCommands.GeoRadiusCommandArgs.newGeoRadiusArgs();//按距离升序排列
         args.sortAscending();
-        GeoResults<RedisGeoCommands.GeoLocation<String>> result = geoOperations.geoRadius(key, circle,args);
+        GeoResults<RedisGeoCommands.GeoLocation<String>> result = geoOperations.geoRadius(key, circle, args);
         return result.getContent();
     }
 
     /**
      * 判断ZSET中是否存在此元素
+     *
      * @param key
      * @param value
-     * @return 存在返回分数,不存在返回null
+     * @return 存在返回分数, 不存在返回null
      */
     public Double zexists(String key, Long value) {
         if (StringUtils.isEmpty(key) || value == null) {
@@ -782,9 +795,10 @@ public class RedisCacheComponent {
 
     /**
      * 判断SET中是否存在此元素
+     *
      * @param key
      * @param value
-     * @return 存在返回分数,不存在返回null
+     * @return 存在返回分数, 不存在返回null
      */
     public boolean sexists(String key, String value) {
         if (StringUtils.isEmpty(key) || value == null) {

@@ -17,10 +17,11 @@ public class RabbitConfig {
 
     /**
      * 定义一个demoQueue队列 没有采用交换机的模式
+     *
      * @return
      */
     @Bean
-    public Queue demoString(){
+    public Queue demoString() {
         return new Queue("demoQueue");
     }
 
@@ -49,6 +50,7 @@ public class RabbitConfig {
 
     /**
      * 定义个fanout交换器
+     *
      * @return
      */
     @Bean
@@ -59,6 +61,7 @@ public class RabbitConfig {
 
     /**
      * 将定义的fanoutA队列与fanoutExchange交换机绑定
+     *
      * @return
      */
     @Bean
@@ -68,6 +71,7 @@ public class RabbitConfig {
 
     /**
      * 将定义的fanoutB队列与fanoutExchange交换机绑定
+     *
      * @return
      */
     @Bean
@@ -77,6 +81,7 @@ public class RabbitConfig {
 
     /**
      * 将定义的fanoutC队列与fanoutExchange交换机绑定
+     *
      * @return
      */
     @Bean

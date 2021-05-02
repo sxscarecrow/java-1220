@@ -67,7 +67,7 @@ public class test {
          *
          */
         IndexRequest request = new IndexRequest("shenxu", "docs", "2");
-        String jsonString =  "{" +
+        String jsonString = "{" +
                 "\"user\":\"shenxu\"," +
                 "\"postDate\":\"2020-01-30\"," +
                 "\"message\":\"我就试试\"" +
@@ -76,7 +76,7 @@ public class test {
 
         // 同步响应
         IndexResponse indexResponse = client.index(request, RequestOptions.DEFAULT);
-        if (indexResponse.getResult() == DocWriteResponse.Result.CREATED){
+        if (indexResponse.getResult() == DocWriteResponse.Result.CREATED) {
             System.out.println("同步响应，索引创建创建成功");
         }
 
@@ -114,10 +114,11 @@ public class test {
 
     /**
      * 获取索引
+     *
      * @throws IOException
      */
     @Test
-    public void getIndex() throws IOException{
+    public void getIndex() throws IOException {
         GetRequest getRequest = new GetRequest("shenxu", "1");
 //        getRequest.fetchSourceContext(FetchSourceContext.DO_NOT_FETCH_SOURCE);
         GetResponse getResponse = client.get(getRequest, RequestOptions.DEFAULT);
@@ -126,6 +127,7 @@ public class test {
 
     /**
      * 判断索引是否存在
+     *
      * @throws IOException
      */
     @Test
@@ -154,6 +156,7 @@ public class test {
 
     /**
      * 删除索引
+     *
      * @throws IOException
      */
     @Test
@@ -161,7 +164,7 @@ public class test {
         DeleteRequest deleteRequest = new DeleteRequest("shenxu", "2");
         DeleteResponse deleteResponse = client.delete(deleteRequest, RequestOptions.DEFAULT);
 
-        if (deleteResponse.getResult() == DocWriteResponse.Result.DELETED){
+        if (deleteResponse.getResult() == DocWriteResponse.Result.DELETED) {
             System.out.println("删除成功");
         }
         System.out.println("======================================");
@@ -192,22 +195,22 @@ public class test {
          * 方式二
          */
 //        for (int i = 2000; i < 3000; i++){
-            Map<String, Object> jsonMap = new HashMap<>();
-            jsonMap.put("user", "shenxu");
-            jsonMap.put("reason", "you know, i am very fan sometime");
-            jsonMap.put("message", "我就走走" + "user");
+        Map<String, Object> jsonMap = new HashMap<>();
+        jsonMap.put("user", "shenxu");
+        jsonMap.put("reason", "you know, i am very fan sometime");
+        jsonMap.put("message", "我就走走" + "user");
 
-            UpdateRequest updateRequest = new UpdateRequest("shenxu", "docs", "2")
-                    .routing("user")
-                    .doc(jsonMap);
+        UpdateRequest updateRequest = new UpdateRequest("shenxu", "docs", "2")
+                .routing("user")
+                .doc(jsonMap);
 
-            UpdateResponse updateResponse = client.update(updateRequest, RequestOptions.DEFAULT);
-            if (updateResponse.getResult() == DocWriteResponse.Result.UPDATED){
-                System.out.println("更新成功");
-            }
-            System.out.println("================" + "user" + "======================");
-            System.out.println(updateResponse.toString());
-            System.out.println("======================================");
+        UpdateResponse updateResponse = client.update(updateRequest, RequestOptions.DEFAULT);
+        if (updateResponse.getResult() == DocWriteResponse.Result.UPDATED) {
+            System.out.println("更新成功");
+        }
+        System.out.println("================" + "user" + "======================");
+        System.out.println(updateResponse.toString());
+        System.out.println("======================================");
 //        }
 
 
@@ -221,6 +224,7 @@ public class test {
 
     /**
      * 说实话真的没有怎么搞懂
+     *
      * @throws IOException
      */
     @Test
@@ -236,6 +240,7 @@ public class test {
 
     /**
      * 批量执行请求
+     *
      * @throws IOException
      */
     @Test
@@ -259,11 +264,11 @@ public class test {
 
         BulkResponse bulkResponse = client.bulk(request, RequestOptions.DEFAULT);
 
-        for(BulkItemResponse bulkItemResponse : bulkResponse){
+        for (BulkItemResponse bulkItemResponse : bulkResponse) {
 
             DocWriteResponse docWriteResponse = bulkItemResponse.getResponse();
-            
-            switch (docWriteResponse.getResult()){
+
+            switch (docWriteResponse.getResult()) {
                 case DELETED:
                     DeleteResponse deleteResponse = (DeleteResponse) docWriteResponse;
                     System.out.println("deleteResponse" + deleteResponse.toString());
@@ -283,6 +288,7 @@ public class test {
 
     /**
      * 我的理解就是分词器的意思 看这个分词到底是怎么样的
+     *
      * @throws IOException
      */
     @Test
@@ -320,8 +326,6 @@ public class test {
 
         queryBuilder.should(
                 QueryBuilders.nestedQuery("shenxu", QueryBuilders.matchPhraseQuery("shenxu.name", "ll"), ScoreMode.None));
-
-
 
 
     }

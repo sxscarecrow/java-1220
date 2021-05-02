@@ -4,12 +4,11 @@ import com.shenxu.zuul.repository.demo.ArticleRepository;
 import com.shenxu.zuul.repository.test.UserRepository;
 import com.shenxu.zuul.mapper.Demo.ArticleMapper;
 import com.shenxu.zuul.mapper.Test.UserMapper;
-import com.shenxu.zuul.domain.entity.Test.User;
+import com.shenxu.zuul.domain.po.Test.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
-import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.Resource;
 
@@ -32,7 +31,7 @@ public class DynamicDatasource {
     private ArticleRepository articleIservice;
 
     @Test
-    public void test(){
+    public void test() {
 
         User user = new User();
         user.setName("shenxu");
@@ -44,7 +43,7 @@ public class DynamicDatasource {
     }
 
     @Test
-    public void demo(){
+    public void demo() {
 
     }
 }

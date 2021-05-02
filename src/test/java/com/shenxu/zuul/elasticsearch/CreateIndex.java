@@ -41,7 +41,7 @@ public class CreateIndex {
 
     @Qualifier("restHighLevelClient")
     @Autowired
-    private RestHighLevelClient  client;
+    private RestHighLevelClient client;
 
     /**
      * 创建索引并添加映射关系

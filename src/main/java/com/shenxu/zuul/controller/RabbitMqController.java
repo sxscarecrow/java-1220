@@ -22,6 +22,7 @@ public class RabbitMqController {
 
     /**
      * 默认模式
+     *
      * @return
      * @throws InterruptedException
      */
@@ -33,6 +34,7 @@ public class RabbitMqController {
 
     /**
      * 广播模式
+     *
      * @return
      */
     @GetMapping("/sendFanout")

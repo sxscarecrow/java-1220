@@ -21,7 +21,7 @@ import java.util.List;
 public class ElasticsearchConfig {
 
     @Bean
-    public RestHighLevelClient restHighLevelClient(){
+    public RestHighLevelClient restHighLevelClient() {
         List<HttpHost> hosts = new ArrayList<>();
         hosts.add(new HttpHost("127.0.0.1", 9200, "http"));
         HttpHost[] hostsArr = hosts.toArray(new HttpHost[0]);
@@ -56,7 +56,7 @@ public class ElasticsearchConfig {
         builder.setDefaultHeaders(new Header[]{new BasicHeader("header", "value")});
 
         // 设置监听 失败的时候及时反馈
-        builder.setFailureListener(new RestClient.FailureListener(){
+        builder.setFailureListener(new RestClient.FailureListener() {
             @Override
             public void onFailure(Node node) {
                 super.onFailure(node);

@@ -17,6 +17,7 @@ import java.util.Objects;
 
 /**
  * 统一封装返回结果
+ *
  * @author ly
  * @date 2020/8/4 14:23
  */

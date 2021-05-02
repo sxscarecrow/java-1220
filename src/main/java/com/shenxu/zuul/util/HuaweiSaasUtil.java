@@ -22,7 +22,6 @@ import java.security.SecureRandom;
 public class HuaweiSaasUtil {
 
 
-
     /**
      * 解密手机号码或邮箱
      *

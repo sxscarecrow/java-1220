@@ -16,10 +16,11 @@ public class WebMvcConfig {
 
     /**
      * zuul处理跨域问题
+     *
      * @return
      */
     @Bean
-    public WebMvcConfigurer corsConfigurer(){
+    public WebMvcConfigurer corsConfigurer() {
         return new WebMvcConfigurer() {
             @Override
             public void addCorsMappings(CorsRegistry registry) {

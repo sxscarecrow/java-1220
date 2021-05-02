@@ -1,4 +1,4 @@
-package com.shenxu.zuul.domain.entity.Demo;
+package com.shenxu.zuul.domain.po.Demo;
 
 import com.baomidou.mybatisplus.annotation.TableName;
 import com.baomidou.mybatisplus.extension.activerecord.Model;

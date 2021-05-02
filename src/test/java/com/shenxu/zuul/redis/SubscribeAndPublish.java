@@ -34,7 +34,7 @@ public class SubscribeAndPublish {
      */
 //    @Scheduled(cron = "0/2 * * * * ?")
     @Test
-    public void publish(){
+    public void publish() {
         redisCacheComponent.publish("shenxu", "hello world" + Math.random());
     }
 

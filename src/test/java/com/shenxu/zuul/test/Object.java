@@ -13,11 +13,25 @@ public class Object {
 
     public static void main(String[] args) {
 
+        Integer a = 1;
+        Integer b = 2;
+        Integer c = 3;
+
+        Integer d = 3;
+        Integer e = 321;
+        Integer f = 321;
+        Long g = 3L;
+        System.out.println(c == d);
+        System.out.println(e == f);
+        System.out.println(c == (a + b));
+        System.out.println(c.equals(a + b));
+        System.out.println(g == (a + b));  // 当有运算符的时候 会自动发生装箱和拆箱操作
+        System.out.println(g.equals(a + b));
+
 //        test test1 = null;
 //        test test = new test(1, "3");
 //        test1 = test;
 //        System.out.println(test1 != null);
-
 
 
         String time = "2020-01~2020-02";
@@ -28,7 +42,7 @@ public class Object {
     }
 
 
-    public static class test{
+    public static class test {
         int a;
         String b;
 
@@ -48,7 +62,7 @@ public class Object {
             this.b = b;
         }
 
-        public test(){
+        public test() {
 
         }
 

@@ -13,7 +13,7 @@ import java.io.Serializable;
 /**
  * 统一API响应结果封装
  *
- * @author yzh
+ * @author shenxu
  */
 @Data
 @Builder

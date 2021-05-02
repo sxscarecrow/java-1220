@@ -34,13 +34,13 @@ public class InsertionSort {
             // 确定pre的值
             pre = i - 1;
             current = array[i];
-            while(pre >= 0 && current > array[pre]){
+            while (pre >= 0 && current > array[pre]) {
                 // 先后移
-                array[pre+1] = array[pre];
+                array[pre + 1] = array[pre];
                 pre--;
             }
             // 在将空出来的位置填充 这里之所以 +1 是因为在while循环中 有一个 pre--操作
-            array[pre+1] = current;
+            array[pre + 1] = current;
         }
         System.out.println(Arrays.toString(array));
     }
