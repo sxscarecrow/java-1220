@@ -1,5 +1,6 @@
 package com.shenxu.zuul.config;
 
+import lombok.val;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.core.convert.converter.Converter;
@@ -7,9 +8,11 @@ import org.springframework.core.serializer.support.DeserializingConverter;
 import org.springframework.core.serializer.support.SerializingConverter;
 import org.springframework.data.redis.connection.RedisConnectionFactory;
 import org.springframework.data.redis.core.RedisTemplate;
+import org.springframework.data.redis.core.script.DefaultRedisScript;
 import org.springframework.data.redis.serializer.RedisSerializer;
 import org.springframework.data.redis.serializer.SerializationException;
 import org.springframework.data.redis.serializer.StringRedisSerializer;
+import org.springframework.scheduling.quartz.ResourceLoaderClassLoadHelper;
 
 /**
  * @author ly
@@ -18,6 +21,13 @@ import org.springframework.data.redis.serializer.StringRedisSerializer;
 
 @Configuration
 public class RedisConfig {
+
+//    @Bean
+//    public DefaultRedisScript<Long> redisScript(){
+//        val redisScript = new DefaultRedisScript<Long>();
+//        redisScript.setResultType(Long.class);
+//        redisScript.setScriptText(ResourceLoaderClassLoadHelper.class);
+//    }
 
     @Bean
     public RedisTemplate<Object, Object> redisTemplate(RedisConnectionFactory factory) {

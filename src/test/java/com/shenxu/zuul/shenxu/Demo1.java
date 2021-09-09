@@ -16,6 +16,13 @@ public class Demo1 {
 
 
     public static void main(String[] args) {
+
+
+        StringBuilder res = new StringBuilder("123");
+        res.reverse();
+
+        String dd = "11 222";
+
         // 输入一个int的数字，按照从右到左的的阅读顺序输出一个不含重复数据的新的数字
 
         // 为什么减去48  是 ascii "5"对应的是 码是 53， -48 刚好得到为数字5 转换的过程

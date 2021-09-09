@@ -1,7 +1,9 @@
 package com.shenxu.zuul.test;
 
+import com.google.common.io.Files;
 import com.shenxu.zuul.domain.result.Result;
 
+import java.io.File;
 import java.util.Objects;
 
 /**
@@ -43,6 +45,9 @@ public class Object {
 
 
     public static class test {
+        {
+            System.out.println("这是构造代码块，不是构造函数");
+        }
         int a;
         String b;
 

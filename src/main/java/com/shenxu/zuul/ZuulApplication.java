@@ -1,6 +1,6 @@
 package com.shenxu.zuul;
 
-import com.shenxu.zuul.component.SpringContext;
+//import com.shenxu.zuul.component.SpringContext;
 import com.shenxu.zuul.domain.properties.MailProperty;
 import com.shenxu.zuul.domain.properties.ShenxuProperty;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +9,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.web.servlet.ServletComponentScan;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 import org.springframework.context.ApplicationContext;
+import org.springframework.scheduling.annotation.EnableAsync;
 import org.springframework.scheduling.annotation.EnableScheduling;
 
 import javax.annotation.PostConstruct;
@@ -19,7 +20,7 @@ import javax.annotation.PostConstruct;
  * @author shenxu
  */
 
-
+@EnableAsync
 @EnableZuulProxy
 @SpringBootApplication
 @EnableScheduling
@@ -35,24 +36,24 @@ public class ZuulApplication {
 
     @Autowired
     private ApplicationContext applicationContext;
-
-    private static ShenxuProperty aa = SpringContext.getBean("shenxuProperty", ShenxuProperty.class);
-
-    @PostConstruct
-    void init() {
-        System.out.println("===================");
-        System.out.println(shenxuProperty.getHost() + "=================");
-
-
-        // 根据自身去获取
-        System.out.println("-----" + applicationContext.hashCode());
-
-        // 自定义实现去获取
-        System.out.println("-----" + SpringContext.applicationContext.hashCode());
-
-        System.out.println("默认->" + applicationContext.getBean(MailProperty.class).hashCode());
-        System.out.println("自定义mailProperty->" + aa.hashCode());
-    }
+//
+//    private static ShenxuProperty aa = SpringContext.getBean("shenxuProperty", ShenxuProperty.class);
+//
+//    @PostConstruct
+//    void init() {
+//        System.out.println("===================");
+//        System.out.println(shenxuProperty.getHost() + "=================");
+//
+//
+//        // 根据自身去获取
+//        System.out.println("-----" + applicationContext.hashCode());
+//
+//        // 自定义实现去获取
+//        System.out.println("-----" + SpringContext.applicationContext.hashCode());
+//
+//        System.out.println("默认->" + applicationContext.getBean(MailProperty.class).hashCode());
+//        System.out.println("自定义mailProperty->" + aa.hashCode());
+//    }
 
 
     /**
